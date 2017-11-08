@@ -1,0 +1,22 @@
+{
+    "name": "wow-php/ssdb-client",
+    "description": "Is a ssdb client",
+    "keywords": ["wow-php ssdb"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "EnHe",
+            "email": "info@wowphp.cm",
+            "homepage": "https://www.wowphp.cn"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "WoW\\SSDB\\" : "src/"
+        }
+    }
+}
