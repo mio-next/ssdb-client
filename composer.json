@@ -18,6 +18,5 @@
         "psr-4" : {
             "WoW\\SSDB\\" : "src/"
         }
-    },
-    "minimum-stability" : "stable"
+    }
 }
