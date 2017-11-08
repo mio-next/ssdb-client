@@ -10,18 +10,18 @@ class Client {
     const STEP_SIZE = 0;
     const STEP_DATA = 1;
 
+    public $step;
+    public $resp = array();
     private $debug = false;
     private $_easy = false;
     private $server = null;
     private $_closed = false;
     private $recv_buf = '';
+    public $block_size;
     public $last_resp = null;
     private $batch_mode = false;
     private $batch_cmds = array();
     private $async_auth_password = null;
-    public $resp = array();
-    public $step;
-    public $block_size;
 
     public function __construct($host, int $port, int $timeOut = 1440)
     {
@@ -565,10 +565,5 @@ class Client {
         }
 
         return null;
-    }
-
-    public function test()
-    {
-        var_dump($this->server);
     }
 }
