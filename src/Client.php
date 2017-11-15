@@ -35,6 +35,7 @@ class Client {
             if (!$this->server) {
                 throw new ConnectException("Connection Error $eN : $eM");
             }
+            $this->easy();
 
             $timeout_sec = intval($timeOut/1000);
             $timeout_usec = ($timeOut - $timeout_sec * 1000) * 1000;
